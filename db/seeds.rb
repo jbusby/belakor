@@ -20,15 +20,15 @@ def seed_categories
   team = ['Study', 'Development', 'Arts and Hobby', 'Other']
 
   hobby.each do |name|
-    Category.create(branch: 'hobby', name: name)
+    Category.create!(branch: 'hobby', name: name)
   end
 
   study.each do |name|
-    Category.create(branch: 'study', name: name)
+    Category.create!(branch: 'study', name: name)
   end
 
   team.each do |name|
-    Category.create(branch: 'team', name: name)
+    Category.create!(branch: 'team', name: name)
   end
 end
 
@@ -37,7 +37,7 @@ def seed_posts
 
   categories.each do |category|
     5.times do
-      Post.create(
+      Post.create!(
         title: Faker::Lorem.sentences[0], 
         content: Faker::Lorem.sentences[0], 
         user_id: rand(1..9), 
@@ -50,4 +50,3 @@ end
 seed_users
 seed_categories
 seed_posts
-
