@@ -1,0 +1,248 @@
+[33mcommit a37bb7954d7ff78534bbf930e36f3564226dd3e8[m[33m ([m[1;36mHEAD -> [m[1;32mmain_feed[m[33m)[m
+Author: Jeff Busby <jbusby@freshbooks.comj>
+Date:   Sun Apr 8 19:08:44 2018 -0400
+
+    Added a popup window to show a full post's content
+    - Add bootstrap's modal component to show full post's content
+    - Render the modal inside the home page's template
+    - Add js to fill the modal with post's content and show it
+    - Added css to style the modal
+
+[33mcommit ff99a7ac91963e02b0af5e02c17e0aad7fcda103[m
+Author: Jeff Busby <jbusby@freshbooks.comj>
+Date:   Sun Apr 8 18:59:29 2018 -0400
+
+    Added CSS  to posts on the home page
+    - Added css to posts.scss file
+    - Added css to the mobile.scss to fix too large text issues on smaller screens
+
+[33mcommit 0538a8ff64bc235013a80c0621915c4d94d8c603[m
+Author: Jeff Busby <jbusby@freshbooks.comj>
+Date:   Sun Apr 8 18:52:53 2018 -0400
+
+    Created a style.js file and added js to create posts' styles
+
+[33mcommit 1d3b479aa0ac8d1a56b71527dfccfa4530f0f2f7[m
+Author: Jeff Busby <jbusby@freshbooks.comj>
+Date:   Sun Apr 8 18:47:45 2018 -0400
+
+    Create a posts.scss file and added CSS to it
+
+[33mcommit 4167ec8fad70f80369e47b5a291f6abc043aad85[m
+Author: Jeff Busby <jbusby@freshbooks.comj>
+Date:   Sun Apr 8 18:46:07 2018 -0400
+
+    Display posts on the home page
+    - Generate Posts controller and create an index action
+    - Inside the index action retrieve Post records
+    - Declare routes for posts
+    - Create a _post.html.erb partial inside posts directory
+    - Render posts insdide the hope page's main content
+
+[33mcommit 573d24ee1a521e41261e7695df69d514cfde0d38[m
+Author: Jeff Busby <jbusby@freshbooks.comj>
+Date:   Sun Apr 8 18:28:56 2018 -0400
+
+    - Added faker gem
+    - inside the seeds.rb file create methods to generate User, Category and Post records
+
+[33mcommit ee663597471e9e908a0c147c84a67e8962b3a4e0[m
+Author: Jeff Busby <jbusby@freshbooks.comj>
+Date:   Sun Apr 8 18:21:51 2018 -0400
+
+    - Adds the bootstrap layout to the home page
+    - Adds CSS to make home page layout's stylistic and responsive design changes
+
+[33mcommit 2c41e83b2318ea72b9417a44d02aebefe4d8dad2[m
+Author: Jeff Busby <jbusby@freshbooks.comj>
+Date:   Sun Apr 8 18:17:34 2018 -0400
+
+    Added specs for User, Category and Post models' associations
+
+[33mcommit 1269d6c443577dfc6d01be72103e704680fe4cc7[m
+Author: Jeff Busby <jbusby@freshbooks.comj>
+Date:   Sun Apr 8 17:59:15 2018 -0400
+
+    Adds post and category factories
+
+[33mcommit 0d127b1d242a4827c37f8ab4eb9ade2c3232caaf[m
+Author: Jeff Busby <jbusby@freshbooks.comj>
+Date:   Sun Apr 8 17:56:37 2018 -0400
+
+    - Generate post and category models
+    - Create associations between user, post and category models
+    - Create categories and posts database tables
+
+[33mcommit b47afd9edfe3e186c073069d9667bfa78b4de253[m[33m ([m[1;31morigin/master[m[33m, [m[1;32mmaster[m[33m)[m
+Author: Jeff Busby <jbusby@freshbooks.comj>
+Date:   Sun Apr 8 17:40:46 2018 -0400
+
+    Adds the sign up feature specs
+
+[33mcommit ef2e21ce3fd3a53c80cd3fb3e0c4915cab68781b[m
+Author: Jeff Busby <jbusby@freshbooks.comj>
+Date:   Sun Apr 8 17:39:23 2018 -0400
+
+    adds logout feature spec
+
+[33mcommit c8e5ef4f963aaeeb8ef9259eeca6b470d91c68db[m
+Author: Jeff Busby <jbusby@freshbooks.comj>
+Date:   Sun Apr 8 17:38:16 2018 -0400
+
+    adds the login feature specs
+
+[33mcommit 25f30c2d88c34e5af31b5f4d4b16543a11e6bef3[m
+Author: Jeff Busby <jbusby@freshbooks.comj>
+Date:   Sun Apr 8 17:35:26 2018 -0400
+
+    added a users factory
+
+[33mcommit e1cbd55d753ebf26b0dbc8f17cb87869002bb505[m
+Author: Jeff Busby <jbusby@freshbooks.comj>
+Date:   Sun Apr 8 17:31:09 2018 -0400
+
+    Add specs to NavigationHelper's
+    collapsible_links_partial_path method
+
+[33mcommit cf40967bae05bd6e3ec562fddc8cb32090b73181[m
+Author: Jeff Busby <jbusby@freshbooks.comj>
+Date:   Sun Apr 8 17:15:43 2018 -0400
+
+    Removed test directory
+
+[33mcommit 6d945e2fa1d0444b8ed3541b3a24370569fc73c3[m
+Author: Jeff Busby <jbusby@freshbooks.comj>
+Date:   Sun Apr 8 17:15:12 2018 -0400
+
+    Setup the testing env
+    - Add the ocnfigure rspec-rails, factory_girl_rals and other gems
+
+[33mcommit 4780a1fe0f3b0b22b8743ca5bf5755aa7047ba5a[m[33m ([m[1;32mhelpers[m[33m)[m
+Author: Jeff Busby <jbusby@freshbooks.comj>
+Date:   Sun Apr 8 16:45:12 2018 -0400
+
+    Configure and create helpers
+    - Changed include_all_helpers config to fals
+    - Split the _collapsible_elements.html.erb file's content into partials and extracted logic from the file into partials
+
+[33mcommit aa696b5447d331ff19687551fb45d5bae982f795[m
+Author: Jeff Busby <jbusby@freshbooks.comj>
+Date:   Sun Apr 8 16:34:11 2018 -0400
+
+    Update the nav bar
+    - Add login, signup, logout an dedit profile links on th enavigation bar
+    - Split _navigation.scss code into partials
+    - Create responsive directory inside the stylesheets directory and add CSS
+    - Add CSS to tweak navigation bar style:
+
+[33mcommit 2943a778acae6e30d432627c0debfd334d0a8500[m
+Author: Jeff Busby <jbusby@freshbooks.comj>
+Date:   Sun Apr 8 15:13:16 2018 -0400
+
+    Add CSS and import CSS files inside the main file
+    - Create a default.scss file and add css
+    - Define  variable
+    - Import default.scss file inside the application.scss file
+
+[33mcommit a48e9332c55c5cf6d1d3e656750389e5cb47cc1a[m
+Author: Jeff Busby <jbusby@freshbooks.comj>
+Date:   Sun Apr 8 15:09:31 2018 -0400
+
+    - Created a signup.scss and and added CSS to the sign up page
+    - Import all files from partials directory to th eapplication.scss
+
+[33mcommit 0dcd012861a4cf8f5cb1a67521add81bd25ec5a9[m
+Author: Jeff Busby <jbusby@freshbooks.comj>
+Date:   Sun Apr 8 15:06:07 2018 -0400
+
+    Changed the sign up page's route from /user/sign_up to /signup
+
+[33mcommit ffa493ba6198e18231f0929c928c66cb51d4425a[m
+Author: Jeff Busby <jbusby@freshbooks.comj>
+Date:   Sun Apr 8 15:03:22 2018 -0400
+
+    - Wrap the signup form with a bootstrap container
+    - Added information text inside the container
+
+[33mcommit 3692cb68f9ba228f37ab78d22a9be5431f0bb6e2[m
+Author: Jeff Busby <jbusby@freshbooks.comj>
+Date:   Sun Apr 8 14:58:16 2018 -0400
+
+    - Delete everything from the signup page except the form
+    - Convert form into a bootstrap form
+    - Add an additional name fieldx
+    git commit -m
+
+[33mcommit eab7229857b4eb380590cf6f43f1f9eca31cc6e9[m
+Author: Jeff Busby <jbusby@freshbooks.comj>
+Date:   Sun Apr 8 14:51:30 2018 -0400
+
+    - Added name column to the users table
+    - Included name attribute to the sign_up_params and account_update_aprams methods inside the RegistrationController
+
+[33mcommit 63514471ee8a80bc52669431a81524cbf723e0ef[m
+Author: Jeff Busby <jbusby@freshbooks.comj>
+Date:   Sun Apr 8 14:38:31 2018 -0400
+
+    change the login route from /users/sign_in to /login
+
+[33mcommit d406cfb805b8195a7577df2e8bda9bbfc7cd5af3[m
+Author: Jeff Busby <jbusby@freshbooks.comj>
+Date:   Sun Apr 8 14:36:53 2018 -0400
+
+    wrap login form in the login page with a bootstrap container
+
+[33mcommit f6c69d8203aa0f7eba9ce4c0b50ecae07a5fd3a7[m
+Author: Jeff Busby <jbusby@freshbooks.comj>
+Date:   Sun Apr 8 14:22:26 2018 -0400
+
+    Generate devise views, modify sign in form and add the bootstrap_form gem
+
+[33mcommit 2e8484273596500b48a4421d900d8d02408dc240[m
+Author: Jeff Busby <jbusby@freshbooks.comj>
+Date:   Sun Apr 8 14:12:17 2018 -0400
+
+    add and configured Devise
+
+[33mcommit 0ac09c958aecd1702905a30f19c0bc9bb40926f6[m
+Author: Jeff Busby <jbusby@freshbooks.comj>
+Date:   Sun Apr 8 13:36:05 2018 -0400
+
+    Added margin to top of body
+
+[33mcommit 66492e689b19603eb53fe814721fdd0d98bc4de1[m
+Author: Jeff Busby <jbusby@freshbooks.comj>
+Date:   Sun Apr 8 13:33:53 2018 -0400
+
+    - in _navigation.html.erb add navbar-fixed-top class to nav
+    - Replace container-fluid class with container
+
+[33mcommit 943e1995213038bcbda7c5b2563bb131246f9f0f[m
+Author: Jeff Busby <jbusby@freshbooks.comj>
+Date:   Sun Apr 8 13:31:36 2018 -0400
+
+    add css to navbar
+
+[33mcommit 86de3646feec10ac1ebbebce8fb644c2b5c8c571[m
+Author: Jeff Busby <jbusby@freshbooks.comj>
+Date:   Sun Apr 8 13:09:25 2018 -0400
+
+    Change navigation bar brand name
+
+[33mcommit 77abf6f9f12676ae280179bd50d2796f5a308d20[m
+Author: Jeff Busby <jbusby@freshbooks.comj>
+Date:   Sat Apr 7 19:53:49 2018 -0400
+
+    Added a basic navigation
+
+[33mcommit 993d3241f59123d0d584884edbd0ab009b182ae6[m
+Author: Jeff Busby <jbusby@freshbooks.comj>
+Date:   Sat Apr 7 19:39:56 2018 -0400
+
+    Add and configured bootstrap gem
+
+[33mcommit 981f45f0aaffc905056f462508dc8ba09f91447b[m
+Author: Jeff Busby <jbusby@freshbooks.comj>
+Date:   Sat Apr 7 19:33:45 2018 -0400
+
+    Initial commit
