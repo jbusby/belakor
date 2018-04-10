@@ -1,9 +1,10 @@
 class PostsBranchService
   def initialize(params)
-    @branch = params[:action]
     @search = params[:search]
     @category = params[:category]
+    @branch = params[:branch]
   end
+
 
   def call
     if @category.blank? && @search.blank?
