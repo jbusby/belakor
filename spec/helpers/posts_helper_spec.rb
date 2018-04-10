@@ -2,6 +2,24 @@ require 'rails_helper'
 
 RSpec.describe PostsHelper, :type => :helper do
 
+  context '#update_pagination_partial_path' do
+    it "returns an update_pagination partial's path" do
+      posts = double('posts', :next_page => 2)
+      assign(:posts, posts)
+      expect(helper.update_pagination_partial_path).to(
+        eq 'posts/posts_pagination_page/update_pagination'
+      )
+    end
+
+    it "returns a remove_pagination partial's path" do
+      posts = double('posts', :next_page => nil)
+      assign(:posts, posts)
+      expect(helper.update_pagination_partial_path).to(
+        eq 'posts/posts_pagination_page/remove_pagination'
+      )
+    end
+  end
+
   context '#create_new_post_partial_path' do
     it "returns a signed_in partial's path" do
       helper.stub(:user_signed_in?).and_return(true)
